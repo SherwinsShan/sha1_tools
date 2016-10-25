@@ -14,7 +14,7 @@
   make  
 
 3. 运行大小端测试工具,查看输出信息  
-  endianTools(.exe)   
+  endianTool(.exe)   
   可以知道该系统是[大端储存还是小端](http://blog.csdn.net/zhaoshuzhaoshu/article/details/37600857/)  
 
 4. 修改源码    
