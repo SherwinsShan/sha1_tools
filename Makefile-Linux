@@ -1,0 +1,19 @@
+TARGET1=sha1Tool
+TARGET2=endianTool
+
+CC=gcc
+
+
+SOURCE1= sha1Test.c getFileSha1.c
+SOURCE2= endiantest.c
+
+all: $(TARGET1) $(TARGET2)
+
+$(TARGET1) : $(SOURCE1)
+	@$(CC) -o $@ $^ 
+	
+$(TARGET2) : $(SOURCE2)
+	@$(CC) -o $@ $^ 
+	
+clean:
+	-@rm -f $(TARGET1) $(TARGET2)
